@@ -1,0 +1,28 @@
+The hAtom schema consists of the following:
+
+    hfeed (hfeed). optional.
+        feed category. optional. keywords or phrases, using rel-tag.
+        hentry (hentry).
+            entry-title. required. text.
+            entry-content. optional (see field description). text. [*]
+            entry-summary. optional. text.
+            updated. required using value class pattern date and time. [*]
+            published. optional using value class pattern date and time.
+            author. required using hCard. [*]
+            bookmark (permalink). optional, using rel-bookmark.
+            tags. optional. keywords or phrases, using rel-tag.
+
+[*] Some required elements have defaults if missing, see below.
+
+Example:::::
+<article class="hentry">
+  <h1 class="entry-title">Microformats are amazing</h1>
+  <p>Published by <span class="author vcard"><span class="fn">W. Developer</span></span>
+     on <time class="published" datetime="2013-06-13 12:00:00">13<sup>th</sup> June 2013</time>
+
+  <p class="entry-summary">In which I extoll the virtues of using microformats.</p>
+
+  <div class="entry-content">
+    <p>Blah blah blah</p>
+  </div>
+</article>
