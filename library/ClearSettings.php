@@ -31,7 +31,7 @@ class ClearSettings
         // This page will be under "Settings"
         add_options_page(
             'Clear Responsive Theme Settings',
-            'Clear Settings',
+            'CompuSign Settings',
             'manage_options',
             'clear-setting-admin',
             array( $this, 'create_admin_page' )
@@ -48,7 +48,7 @@ class ClearSettings
         ?>
         <div class="wrap">
             <?php screen_icon(); ?>
-            <h2>Clear Theme Settings-Options</h2>
+            <h2>Clear Theme Settings-Options for Compusign</h2>
             <form method="post" action="options.php">
                 <?php
                 // This prints out all hidden setting fields

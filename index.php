@@ -16,8 +16,8 @@
     if( $my_query->have_posts() ) :
     while( $my_query->have_posts() ) : $my_query->the_post();
     ?>
-        <h1 class="show-for-medium-up text-center">Capitol Web Marketing Consultants</h1>
-        <h1  class="show-for-small text-center">CWMC</h1>
+        <h1 class="show-for-medium-up text-center">Compusign Signs</h1>
+        <h1  class="show-for-small text-center">Compusign</h1>
         <hr />
         <?php  //JasperDisplayOrbit(); ?>
     <article class="hentry">
