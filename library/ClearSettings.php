@@ -6,7 +6,11 @@
  * Time: 9:01 AM
  */
 
-
+/**
+ * Class ClearSettings
+ * Optimized for CompuSigns Website.
+ * compu_settings is the variable that is stored in the options database.
+ */
 class ClearSettings
 {
     /**
@@ -44,7 +48,7 @@ class ClearSettings
     public function create_admin_page()
     {
         // Set class property
-        $this->options = get_option( 'home_page_post_id' );
+        $this->options = get_option( 'compu_settings' );
         ?>
         <div class="wrap">
             <?php screen_icon(); ?>
@@ -68,7 +72,7 @@ class ClearSettings
     {
         register_setting(
             'clear_option_group', // Option group
-            'home_page_post_id', // Option name
+            'compu_settings', // Option name
             array( $this, 'sanitize' ) // Sanitize
         );
 
@@ -128,7 +132,7 @@ class ClearSettings
     public function id_number_callback()
     {
         printf(
-            '<input type="text" id="id_number" name="home_page_post_id[id_number]" value="%s" />',
+            '<input type="text" id="id_number" name="compu_settings[id_number]" value="%s" />',
             isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
         );
     }
@@ -139,7 +143,7 @@ class ClearSettings
     public function title_callback()
     {
         printf(
-            '<input type="text" id="title" name="home_page_post_id[title]" value="%s" />',
+            '<input type="text" id="title" name="compu_settings[title]" value="%s" />',
             isset( $this->options['title'] ) ? esc_attr( $this->options['title']) : ''
         );
     }

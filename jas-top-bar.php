@@ -1,5 +1,5 @@
 <?php //ob_start();// This should add the topbar module
-    $shortTitleOption = get_option('home_page_post_id');
+    $shortTitleOption = get_option('compu_settings');
     $shortTitle = $shortTitleOption['title'];
 ?>
 <!--<div id="fb-root"></div>-->
@@ -23,18 +23,6 @@
                             <?php get_top_bar_search_form(); ?>
                         </div>
                     </div>
-                </li>
-
-                <li class="has-dropdown">
-                    <a href="#">Follow Us Google+</a>
-                    <ul class="dropdown">
-                        <li>
-                            <div class="g-page" data-href="//plus.google.com/109903743473823980230" data-rel="publisher"></div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="fbSubscriber">
-<!--                    <div class="fb-follow" data-href="http://www.facebook.com/CapitolWMC" data-height="45" data-colorscheme="dark" data-layout="button_count" data-show-faces="true"></div>-->
                 </li>
             </ul>
 

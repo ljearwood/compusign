@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="row container">
     <?php
-    $postID = get_option('home_page_post_id');
+    $postID = get_option('compu_settings');
     $args = $postID['id_number'];
     $titleString = $postID['title'];
     if( ! $args ){
@@ -16,7 +16,7 @@
     if( $my_query->have_posts() ) :
     while( $my_query->have_posts() ) : $my_query->the_post();
     ?>
-        <h1 class="show-for-medium-up text-center">Compusign Signs</h1>
+        <h1 class="show-for-medium-up text-center"><?php echo $titleString; ?></h1>
         <h1  class="show-for-small text-center">Compusign</h1>
         <hr />
         <?php  //JasperDisplayOrbit(); ?>
@@ -31,7 +31,7 @@
     <?php
             endwhile;
         endif;
-        rewind_posts();
+        wp_reset_postdata();
     ?>
     </div>
     </article>
