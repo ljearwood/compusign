@@ -20,7 +20,7 @@
                 <li class="has-form">
                     <div class="row collapse">
                         <div class="small-12 columns show-for-medium-up">
-                            <?php get_search_form(); ?>
+                            <?php get_top_bar_search_form(); ?>
                         </div>
                     </div>
                 </li>
