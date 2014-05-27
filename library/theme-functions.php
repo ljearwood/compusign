@@ -57,7 +57,7 @@ if(!function_exists('Jasper_entry_meta')) :
     function Jasper_entry_meta() {
         echo '<div class="small-12 large-12 columns">';
         echo '<div class="row collapse"><div class="small-6 large-6 columns"><p class="byline text-center"><span class="updated" datetime="'. get_the_time('c') .'" pubdate>'. sprintf('Posted on %s.', get_the_time('l, F jS, Y')).'</p></span></div>';
-        echo '<div class="small-6 large-6 columns"><p class="byline author text-center">Written by <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a></p></div>';
+        echo '<div class="small-6 large-6 columns"><p class="byline vcard author text-center">Written by <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a></p></div>';
         echo '</div></div>';
     }
 endif;
@@ -66,7 +66,7 @@ if(!function_exists('Archive_entry_meta')) :
     function Archive_entry_meta() {
         echo '<div class="small-12 large-12 columns">';
         echo '<div class="row collapse"><div class="small-6 large-6 columns"><p class="byline text-center"><span class="updated" datetime="'. get_the_time('c') .'" pubdate>'. sprintf('Posted on %s.', get_the_time('D, M jS, Y')).'</p></span></div>';
-        echo '<div class="small-6 large-6 columns"><p class="byline author text-center">Written by <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a></p></div>';
+        echo '<div class="small-6 large-6 columns"><p class="byline vcard author text-center">Written by <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .'</a></p></div>';
         echo '</div></div>';
     }
 endif;

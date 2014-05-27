@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <!--[if IE 7]>
-<html class="ie ie7" <?php language_attributes(); ?>>
+<html class="ie ie7" <?php language_attributes(); ?> itemscope="" itemtype="http://schema.org/WebPage">
 <![endif]-->
 <!--[if IE 8]>
-<html class="ie ie8" <?php language_attributes(); ?>>
+<html class="ie ie8" <?php language_attributes(); ?> itemscope="" itemtype="http://schema.org/WebPage">
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8) ]><!-->
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> itemscope="" itemtype="http://schema.org/WebPage">
 <!--<![endif]-->
 
 <head>
-    <title>
+    <title itemprop="name">
         <?php
             // Print the <title> tag based on what is being viewed.
             global $page, $paged;
@@ -30,10 +30,11 @@
                 echo ' | ' . sprintf('Page %s', max( $paged, $page ) );
         ?>
     </title>
+    <meta name="homeurl" itemprop="url" content="<?php echo get_site_url(); ?>"
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri() . '/css/app.css'; ?>"  />
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> itemprop="">
 <?php include "jas-top-bar.php"; ?>
 

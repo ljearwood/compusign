@@ -16,13 +16,13 @@
     if( $my_query->have_posts() ) :
     while( $my_query->have_posts() ) : $my_query->the_post();
     ?>
-        <h1 class="show-for-medium-up text-center"><?php echo $titleString; ?></h1>
-        <h1  class="show-for-small text-center">Compusign</h1>
+        <h2 class="show-for-medium-up text-center" itemprop="name"><?php echo $titleString; ?></h2>
+        <h2  class="show-for-small text-center">Compusign</h2>
         <hr />
         <?php  //JasperDisplayOrbit(); ?>
-    <article class="hentry">
+    <article class="hentry" itemscope="" itemtype="http://schema.org/Article">
         <div class="row">
-            <h2 class="small-12 large-12 columns text-center entry-title" itemprop="name"><span id="numero1" itemprop="headline"><a rel-bookmark href="<?php the_permalink(); ?>" itemprop="url"><?php the_title(); ?></a></span></h2>
+            <h1 class="small-12 large-12 columns text-center entry-title" itemprop="name"><span id="numero1" itemprop="headline"><a rel-bookmark href="<?php the_permalink(); ?>" itemprop="url"><?php the_title(); ?></a></span></h1>
             <?php Jasper_entry_meta(); ?>
         </div>
 
