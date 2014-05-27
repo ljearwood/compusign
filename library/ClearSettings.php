@@ -98,6 +98,14 @@ class ClearSettings
             'clear-setting-admin', // Page
             'setting_section_id' // Section
         );
+
+        add_settings_field(
+            'main_description', // ID
+            'Schema.org main description', // Title
+            array( $this, 'main_description_callback' ), // Callback
+            'clear-setting-admin', // Page
+            'setting_section_id' // Section
+        );
     }
 
     /**
@@ -115,6 +123,9 @@ class ClearSettings
         if( isset( $input['title'] ) )
             $new_input['title'] = sanitize_text_field( $input['title'] );
 
+        if( isset( $input['main_description'] ) )
+            $new_input['main_description'] = sanitize_text_field( $input['main_description'] );
+
         return $new_input;
     }
 
@@ -123,7 +134,7 @@ class ClearSettings
      */
     public function print_section_info()
     {
-        print 'Welcome to the Clear Responsive Theme settings page. Enter your settings below:';
+        print 'Welcome to the Clear Responsive Theme (Compu Signs) settings page. Enter your settings below:';
     }
 
     /**
@@ -133,7 +144,7 @@ class ClearSettings
     {
         printf(
             '<input type="text" id="id_number" name="compu_settings[id_number]" value="%s" />',
-            isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
+            isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number'] ) : ''
         );
     }
 
@@ -144,7 +155,15 @@ class ClearSettings
     {
         printf(
             '<input type="text" id="title" name="compu_settings[title]" value="%s" />',
-            isset( $this->options['title'] ) ? esc_attr( $this->options['title']) : ''
+            isset( $this->options['title'] ) ? esc_attr( $this->options['title'] ) : ''
+        );
+    }
+
+    public function main_description_callback(){
+        printf(
+        '<p>This will be the meta description as well. Must have main keyword at the beginning!</p>
+        <textarea id="main_description" rows="10" cols="85" name="compu_settings[main_description]" placeholder="%s"></textarea>',
+        isset( $this->options['main_description'] ) ? esc_attr( $this->options['main_description'] ) : ''
         );
     }
 }

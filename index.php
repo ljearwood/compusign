@@ -16,8 +16,9 @@
     if( $my_query->have_posts() ) :
     while( $my_query->have_posts() ) : $my_query->the_post();
     ?>
-        <h2 class="show-for-medium-up text-center" itemprop="name"><?php echo $titleString; ?></h2>
-        <h2  class="show-for-small text-center">Compusign</h2>
+        <h2 class="show-for-medium-up text-center" itemprop="headline"><?php echo $titleString; ?></h2>
+        <h2  class="show-for-small text-center" itemprop="headline">Compusign</h2>
+        <?php //var_dump( $postID['main_description'] ); ?>
         <hr />
         <?php  //JasperDisplayOrbit(); ?>
     <article class="hentry" itemscope="" itemtype="http://schema.org/Article">

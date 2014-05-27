@@ -30,11 +30,16 @@
                 echo ' | ' . sprintf('Page %s', max( $paged, $page ) );
         ?>
     </title>
-    <meta name="homeurl" itemprop="url" content="<?php echo get_site_url(); ?>"
+    <meta name="homeurl" itemprop="url" content="<?php echo get_site_url(); ?>" />
+    <meta name="description" itemprop="description" content="<?php
+        $clearOptions = get_option('compu_settings');
+        $mainDescription = $clearOptions['main_description'];
+        echo $mainDescription;
+    ?>"
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri() . '/css/app.css'; ?>"  />
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?> itemprop="">
+<body <?php body_class(); ?> itemprop="mainContentOfPage">
 <?php include "jas-top-bar.php"; ?>
 
