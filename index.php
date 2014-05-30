@@ -39,30 +39,38 @@
                 <li><a href="#">Aperiam, ducimus, eius.</a></li>
             </ul>
         </div>
-        <div class="panel">
-            <h3>Get a Quote!</h3>
 
-            <form action="#" method="post">
-                <div class="row">
-                    <div class="large-12 columns">
-                        <div class="row collapse">
-                            <div class="small-8 columns">
-                                <input type="text" placeholder="Email">
-                            </div>
-                            <div class="small-4 columns">
-                                <a href="#" class="button postfix">Quote</a>
+        <div class="animateContainer">
+
+            <div id="slideInPanel" class="panel slideInPanel">
+                <h3>Get a Quote!</h3>
+
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <div class="row collapse">
+                                <div class="small-8 columns">
+                                    <input type="text" placeholder="Email">
+                                </div>
+                                <div class="small-4 columns">
+                                    <a href="#" class="button postfix">Quote</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </form>
-        </div>
-        <div class="panel">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eius modi saepe!</p>
-            <h4><a href="#">Some Useful link</a>
-            </h4>
-            <p>Debitis error hic iure nemo perspiciatis quaerat, quam quas quo? Laudantium, tempore!</p>
+                </form>
+            </div>
+
+            <div class="panel slideDownPanel">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eius modi saepe!</p>
+                <h4><a href="#">Some Useful link</a>
+                </h4>
+
+                <p>Debitis error hic iure nemo perspiciatis quaerat, quam quas quo? Laudantium, tempore!</p>
+            </div>
+
         </div>
     </div>
     <div id="firstStop" class="small-12 large-6 columns panel">

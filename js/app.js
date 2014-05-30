@@ -7,6 +7,7 @@ jQuery(document).foundation();
 jQuery(document).ready(function(){
     jQuery('.pricing-table ul li').addClass('bullet-item');
     jQuery('#wpadminbar').addClass('show-for-medium-up');
+    animateSidePanel();
     jQuery(document).foundation('joyride',(
         {
             tipLocation          : 'bottom',  // 'top' or 'bottom' in relation to parent
@@ -41,4 +42,23 @@ jQuery(document).ready(function(){
 function StartJoyRide(){
     //alert('been clicked');
     jQuery(document).foundation('joyride','start');
+}
+
+
+
+function animateSidePanel(){
+    var slideInPanelHeight, slideInPanel, slideDownPanel;
+    var slideInPanelClientHeight = document.getElementById('slideInPanel').clientHeight;
+    slideInPanel = jQuery('.slideInPanel');
+    slideDownPanel = jQuery('.slideDownPanel');
+    slideInPanelHeight = slideInPanelClientHeight + 20;
+    slideInPanel.animate({
+        display: 'block',
+        left: '0px'
+    }, 5000, 'easeOutBounce' );
+    slideDownPanel.animate({
+        display: 'block',
+        top: slideInPanelHeight + 'px',
+        left: '0px'
+    }, 5000,'easeOutBounce');
 }

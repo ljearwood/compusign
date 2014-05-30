@@ -5100,3 +5100,15 @@ th.hide-for-touch {
 
 
 
+
+.animateContainer {
+  position: relative; }
+
+.slideInPanel {
+  position: absolute;
+  left: -100%; }
+
+.slideDownPanel {
+  position: absolute;
+  top: 0;
+  left: 0; }
