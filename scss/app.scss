@@ -2,6 +2,12 @@
 @import "normalize";
 @import "foundation";
 
+body{
+  background-image: url("../img/grad1.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
 .always-white{
   color: #FFFFFF !important;
   a{

@@ -5056,6 +5056,11 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
+body {
+  background-image: url("../img/grad1.jpg");
+  background-repeat: repeat-x;
+  background-size: cover; }
+
 .always-white {
   color: #FFFFFF !important; }
   .always-white a {
