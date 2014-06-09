@@ -5616,6 +5616,16 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
+body {
+  background-image: url("../img/spot-bouquet-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: scroll;
+  color: #ffffff !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important; }
+
 .always-white {
   color: #FFFFFF !important; }
   .always-white a {
@@ -5669,3 +5679,6 @@ th.hide-for-touch {
   position: absolute;
   top: 0;
   left: 0; }
+
+.logo-slogan-container {
+  margin-top: 0.625rem; }

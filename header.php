@@ -41,5 +41,5 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> itemprop="mainContentOfPage">
-<?php include "jas-top-bar.php"; ?>
+<?php include "compu-top-bar.php"; ?>
 

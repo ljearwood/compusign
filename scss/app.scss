@@ -3,9 +3,19 @@
 @import "foundation";
 
 body{
-  background-image: url("../img/grad1.jpg");
-  background-repeat: repeat-x;
+  background-image: url("../img/spot-bouquet-background.jpg");
+  //background-repeat: repeat-x;
   background-size: cover;
+  background-attachment: fixed;
+  //position: fixed;
+  overflow: scroll;
+//  width: 1920px;
+//  height: 1200px;
+  color: #ffffff !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #ffffff !important;
 }
 
 .always-white{
@@ -89,4 +99,10 @@ body{
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.logo-slogan-container{
+  margin-top: rem-calc(10px);
+  //padding: rem-calc(10px);
+  //background-color: rgba(255, 255, 255, 0.2);
 }
