@@ -37,6 +37,9 @@
         echo $mainDescription;
     ?>"
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
+    <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple"/>
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri() . '/css/app.css'; ?>"  />
     <?php wp_head(); ?>
 </head>

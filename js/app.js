@@ -62,3 +62,4 @@ function animateSidePanel(){
         left: '0px'
     }, 5000,'easeOutBounce');
 }
+

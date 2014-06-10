@@ -106,3 +106,33 @@ h1,h2,h3,h4,h5,h6{
   //padding: rem-calc(10px);
   //background-color: rgba(255, 255, 255, 0.2);
 }
+
+h1.fancytext{
+  font-family: 'Rancho';
+  font-size: 400%;
+  color: rgba( 0, 0, 0, 0.85) !important;
+}
+
+h2.slogan-line{
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 250%;
+  //color: rgba( 18, 182, 159, 1) !important;
+  color: rgba( 255, 100, 0, 1) !important;
+}
+
+.articleContainer{
+  padding: rem-calc(20px);
+}
+
+.buttonContainer ul{
+  list-style-type: none;
+}
+
+.buttonList{
+  padding-top: rem-calc(50px);
+}
+
+.centered-image{
+  display: block;
+  margin: 0 auto;
+}

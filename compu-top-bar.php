@@ -31,6 +31,7 @@
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Get a Quote</a></li>
+                <li><a href="#">Locations</a></li>
                 <li class="toggle-topbar"><a href="#">Places</a></li>
             </ul>
         </section>
