@@ -114,7 +114,7 @@ h1.fancytext{
 }
 
 h2.slogan-line{
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: 'Railway';
   font-size: 250%;
   //color: rgba( 18, 182, 159, 1) !important;
   color: rgba( 255, 100, 0, 1) !important;
@@ -135,4 +135,23 @@ h2.slogan-line{
 .centered-image{
   display: block;
   margin: 0 auto;
+}
+
+.imageFade{
+  list-style-type: none;
+  li{
+    width: 100%;
+    height: auto;
+    min-height: rem-calc(350px);
+    max-height: rem-calc(400px);
+    img{
+      width: inherit;
+      height: inherit;
+    }
+  }
+}
+
+#tabContainer{
+  min-height: rem-calc(800px);
+  max-height: rem-calc(1000px);
 }

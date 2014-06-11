@@ -1,0 +1,54 @@
+/*
+Syntax error: Undefined variable: "$include-html-classes".
+        on line 1105 of _settings.scss
+
+1100: 
+1101: //
+1102: // TABS
+1103: //
+1104: 
+1105:  $include-html-tabs-classes: $include-html-classes;
+1106: 
+1107: $tabs-navigation-padding: rem-calc(16);
+1108: $tabs-navigation-bg-color: #efefef  ;
+1109: $tabs-navigation-active-bg-color: #fff;
+1110: $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
+
+Backtrace:
+_settings.scss:1105
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:327:in `visit_variable'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin.rb:81:in `update_stylesheets'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:443:in `watch_or_update'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:326:in `process_result'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:41:in `parse'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:21:in `parse!'
+C:/ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.19/bin/scss:13:in `<top (required)>'
+C:/ruby/bin/scss:23:in `load'
+C:/ruby/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$include-html-classes\".\A         on line 1105 of _settings.scss\A \A 1100: \A 1101: //\A 1102: // TABS\A 1103: //\A 1104: \A 1105:  $include-html-tabs-classes: $include-html-classes;\A 1106: \A 1107: $tabs-navigation-padding: rem-calc(16);\A 1108: $tabs-navigation-bg-color: #efefef  ;\A 1109: $tabs-navigation-active-bg-color: #fff;\A 1110: $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);"; }

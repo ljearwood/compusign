@@ -7,7 +7,7 @@ jQuery(document).foundation();
 jQuery(document).ready(function(){
     jQuery('.pricing-table ul li').addClass('bullet-item');
     jQuery('#wpadminbar').addClass('show-for-medium-up');
-    animateSidePanel();
+    //animateSidePanel();
     jQuery(document).foundation('joyride',(
         {
             tipLocation          : 'bottom',  // 'top' or 'bottom' in relation to parent
@@ -36,6 +36,16 @@ jQuery(document).ready(function(){
             }
         }
     ));
+    jQuery('#fadeSlider').innerFade({
+        animationType: 'fade', //Type of animation 'fade' or 'slide' (Default: 'fade')
+        animate: true, // This is the default
+        speed: 8000 , // Fadingspeed in milliseconds or keywords (slow, normal or fast)(Default: 'normal')
+        easing: 'easeInOutQuad', //this is the easing function
+        timeout: 5000, // Time between the fades in milliseconds (Default: '2000')
+        type: 'sequence', // Type of slide show: 'sequence', 'random' or 'random_start' (Default: 'sequence')
+        containerheight: '500px', // Height of the containing element in any css-height-value (Default: 'auto')
+        runningclass: 'innerfade' // CSS-Class which the container get’s applied (Default: 'innerfade')
+    });
     //jQuery(document).foundation('joyride', 'start'); //uncomment this to start the joyride on page load.
 });
 

@@ -12,10 +12,10 @@
 $include-html-tabs-classes: $include-html-classes !default;
 
 $tabs-navigation-padding: rem-calc(16) !default;
-$tabs-navigation-bg-color: #efefef !default;
-$tabs-navigation-active-bg-color: #fff !default;
-$tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%) !default;
-$tabs-navigation-font-color: #222 !default;
+$tabs-navigation-bg-color: #FF7800 !default;
+$tabs-navigation-active-bg-color: #FF9B00 !default;
+$tabs-navigation-hover-bg-color: #9b5000 !default;
+$tabs-navigation-font-color: #0064ff !default;
 $tabs-navigation-font-size: rem-calc(16) !default;
 $tabs-navigation-font-family: $body-font-family !default;
 
@@ -32,6 +32,7 @@ $tabs-vertical-navigation-margin-bottom: 1.25rem !default;
       dd {
         position: relative;
         margin-bottom: 0 !important;
+        margin-right: rem-calc(10px);
         float: $default-float;
         > a {
           display: block;
@@ -40,6 +41,11 @@ $tabs-vertical-navigation-margin-bottom: 1.25rem !default;
           padding: $tabs-navigation-padding $tabs-navigation-padding * 2;
           font-family: $tabs-navigation-font-family;
           font-size: $tabs-navigation-font-size;
+          border-top-left-radius: rem-calc(10px);
+          border-top-right-radius: rem-calc(10px);
+          border-bottom-left-radius: rem-calc(10px);
+          border-bottom-right-radius: rem-calc(10px);
+          margin-bottom: rem-calc(10px);
           &:hover { background: $tabs-navigation-hover-bg-color; }
         }
         &.active a { background: $tabs-navigation-active-bg-color; }
@@ -58,6 +64,9 @@ $tabs-vertical-navigation-margin-bottom: 1.25rem !default;
           float: none;
           display: block;
           top: auto;
+          > a {
+            margin-bottom: rem-calc(10px);
+          }
         }
       }
     }

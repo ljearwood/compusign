@@ -25,11 +25,8 @@
                     <div class="row collapse">
                         <div class="large-12 medium-12 columns logo-slogan-container">
                             <div class="row">
-                                <div class="medium-9 large-9 columns">
-                                    <img src="<?php echo $imagesDirectory . 'compusign-name-first-part.png'; ?>" alt="Compu Signs"/>
-                                </div>
-                                <div class="medium-3 large-3 columns">
-                                    <img src="<?php echo $imagesDirectory . 'left-logo-decoration.png'; ?>" alt="Compu Signs Logo Decoration"/>
+                                <div class="medium-12 large-12 columns">
+                                    <img src="<?php echo $imagesDirectory . 'compusigns-3d-logo.png'; ?>" alt="Compu Signs"/>
                                 </div>
                                 <h2 class="font-effect-shadow-multiple slogan-line text-right">Big or Small We Do Them All!</h2>
                             </div>
@@ -40,7 +37,7 @@
                     <div class="buttonContainer buttonList">
                         <div class="row">
                             <div class="medium-12 large-12 columns">
-                                <a class="button radius" href="#">Request A Quote</a>
+                                <a class="button expand radius" href="#">Request A Quote</a>
                             </div>
                         </div>
                         <div class="row">
@@ -59,24 +56,9 @@
     </div><!--    here-->
     <div class="row">
         <div class="medium-6 large-3 columns">
-<!--            <div class="">-->
-<!--                <h2>Welcome to Our site</h2>-->
-<!--                <hr/>-->
-<!--                <h3>Helpful links</h3>-->
-<!--                <ul>-->
-<!--                    <li><a href="#">Lorem ipsum dolor.</a></li>-->
-<!--                    <li><a href="#">Ducimus, itaque, praesentium.</a></li>-->
-<!--                    <li><a href="#">Amet, deserunt, esse.</a></li>-->
-<!--                    <li><a href="#">Dolorum, harum, voluptatibus.</a></li>-->
-<!--                    <li><a href="#">Aperiam, ducimus, eius.</a></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-
             <div class="animateContainer">
-
-                <div id="slideInPanel" class="slideInPanel">
+                <div id="slideInPanel">
                     <h3>Get a Quote!</h3>
-
                     <form action="#" method="post">
                         <div class="row">
                             <div class="large-12 columns">
@@ -92,8 +74,7 @@
                         </div>
                     </form>
                 </div>
-
-                <div class="slideDownPanel">
+                <div>
                     <h3>Lorem ipsum dolor sit amet.</h3>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eius modi saepe!</p>
@@ -102,7 +83,6 @@
 
                     <p>Debitis error hic iure nemo perspiciatis quaerat, quam quas quo? Laudantium, tempore!</p>
                 </div>
-
             </div>
         </div>
         <div id="firstStop" class="medium-6 large-9 columns">
@@ -133,22 +113,24 @@
         ?>
         </div>
     </div>
-    <div class="row">
+    <div id="tabContainer" class="row">
         <div class="medium-12 large-12 columns">
             <dl class="tabs" data-tab>
-                <dd class="active"><a href="#panel2-1">Roofing</a></dd>
-                <dd><a href="#panel2-2">Siding</a></dd>
-                <dd><a href="#panel2-3">Construction</a></dd>
-                <dd><a href="#panel2-4">Remodel</a></dd>
+                <dd class="active"><a href="#panel2-1">Signs</a></dd>
+                <dd><a href="#panel2-2">Banners</a></dd>
+                <dd><a href="#panel2-3">Vehicle Graphics</a></dd>
+                <dd><a href="#panel2-4">Digital Imaging</a></dd>
+                <dd><a href="#panel2-5">Other Services</a></dd>
             </dl>
-            <hr/>
+<!--            <hr/>-->
             <div class="tabs-content">
                 <div class="content active" id="panel2-1">
                     <dl class="tabs vertical" data-tab>
-                        <dd class="active"><a class="loadOrbitReFlow" href="#panel1a">Shingled Roofs</a>
+                        <dd class="active"><a class="loadOrbitReFlow" href="#panel1a">Exterior Signs</a>
                         </dd>
-                        <dd><a href="#panel2a">Metal Roofs</a></dd>
-                        <dd><a class="loadOrbitReFlow" href="#panel3a">Tile Roofs</a></dd>
+                        <dd><a href="#panel2a">Interior Signs</a></dd>
+                        <dd><a class="loadOrbitReFlow" href="#panel3a">Real Estate Signs</a></dd>
+                        <dd><a href="#panel4a">Traffic Signs</a></dd>
                     </dl>
                     <div class="tabs-content vertical">
                         <div class="content active" id="panel1a">
@@ -160,25 +142,60 @@
                                 </li>
                                 <li><img src="<?php echo $imagesDirectory . 'slide2.jpg' ?>" alt=""/>
 
-                                    <div class="orbit-caption"></div>
+                                    <div class="orbit-caption">Another Caption</div>
                                 </li>
                                 <li><img src="<?php echo $imagesDirectory . 'slide3.jpg' ?>" alt=""/>
 
-                                    <div class="orbit-caption"></div>
+                                    <div class="orbit-caption">Caption 3</div>
                                 </li>
                                 <li><img src="<?php echo $imagesDirectory . 'slide4.jpg' ?>" alt=""/>
 
-                                    <div class="orbit-caption"></div>
+                                    <div class="orbit-caption">Caption 4</div>
                                 </li>
                             </ul>
                         </div>
                         <div class="content" id="panel2a">
-                            <h3 class="text-center white-text">Metal Roofs</h3>
-                            <img src="<?php echo $imagesDirectory . 'tile-slide2.jpg' ?>" alt="tile slide two"/>
+                            <h3 class="text-center white-text">Interior Signs</h3>
+                            Select from a number of different options for your interior signage in order to brand your business and define your space.<br /><br />
+
+                            <b>3 Dimensional logo & lettering</b><br />
+                            Boldly display your company's insignia with dimensional lettering in order to provide the impact and visual creativity you're looking for.<br /><br />
+
+                            <b>Point of purchase (POP)</b><br />
+                            From menu boards to promotional material, consider point-of-sale material to prompt a purchase and attract clientele.<br /><br />
+
+                            <b>Informational</b><br />
+                            We can manufacture, from a variety of materials, for a number of different practical applications, directory signs, ADA signs, safety & caution signage as well as name plates.<br /><br />
+
+                            <b>Decorative</b><br />
+                            From a mural on wall paper to your logo on the dance floor, a talented design and production staff are on hand to help you, as simply or as elaborately, enhance and adorn your space.<br /><br />
+
+                            <b>Tradeshow signs</b><br />
+                            Take your graphics on the road effortlessly with our collapsible, foldable, portable signs. We offer table cloths, retractable and stationary banner stands, pop-up booths and so much more.
+
+                            <br /><br />
                         </div>
                         <div class="content" id="panel3a">
                             <h3 class="text-center white-text">Tile Roofs</h3>
-
+                            <ul id="fadeSlider" class="imageFade">
+                                <li>
+                                    <img src="<?php echo $imagesDirectory . 'tile-slide1.jpg' ?>" alt="tile slide two"/>
+                                    <!--                                    <div class="sliderCaption">A caption</div>-->
+                                </li>
+                                <li>
+                                    <img src="<?php echo $imagesDirectory . 'tile-slide2.jpg' ?>" alt="tile slide two"/>
+                                    <!--                                    <div class="sliderCaption">Another caption</div>-->
+                                </li>
+                                <li>
+                                    <img src="<?php echo $imagesDirectory . 'tile-slide3.jpg' ?>" alt="tile slide two"/>
+                                    <!--                                    <div class="sliderCaption">A third caption</div>-->
+                                </li>
+                                <li>
+                                    <img src="<?php echo $imagesDirectory . 'tile-slide4.jpg' ?>" alt="tile slide two"/>
+                                    <!--                                    <div class="sliderCaption">Ad the last caption</div>-->
+                                </li>
+                            </ul>
+                            <!--                            <img src="--><?php //echo $imagesDirectory . 'tile-slide2.jpg' ?><!--" alt="tile slide two"/>-->
                             <div class="row">
                                 <div class="small-12 medium-12 large-12 columns">
                                     <div class="panel">
@@ -201,6 +218,9 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="content" id="panel4a">
+                            <h2>Traffic Signs</h2>
                         </div>
                     </div>
                 </div>
@@ -243,8 +263,8 @@
                 </div>
                 <div class="content" id="panel2-4">
                     <dl class="tabs vertical" data-tab>
-                        <dd class="active"><a href="#panel1a">Tab 1</a></dd>
-                        <dd><a href="#panel2a">Tab 2</a></dd>
+                        <dd class="active"><a href="#panel1a">Digital Imaging</a></dd>
+                        <dd><a href="#panel2a">Something Else</a></dd>
                     </dl>
                     <div class="tabs-content vertical">
                         <div class="content active" id="panel1a">
@@ -289,9 +309,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="content" id="panel2-5">
+                    <h2>Other Services</h2>
+                </div>
             </div>
         </div>
         </div>
+        <div class="row">
+            <div class="medium-12 large-12 columns">
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repudiandae!</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+
 <?php get_footer(); ?>

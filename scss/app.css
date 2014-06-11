@@ -4112,18 +4112,24 @@ table {
   .tabs dd {
     position: relative;
     margin-bottom: 0 !important;
+    margin-right: 0.625rem;
     float: left; }
     .tabs dd > a {
       display: block;
-      background: #efefef;
-      color: #222222;
+      background: #ff7800;
+      color: #0064ff;
       padding: 1rem 2rem;
       font-family: "Raleway";
-      font-size: 1rem; }
+      font-size: 1rem;
+      border-top-left-radius: 0.625rem;
+      border-top-right-radius: 0.625rem;
+      border-bottom-left-radius: 0.625rem;
+      border-bottom-right-radius: 0.625rem;
+      margin-bottom: 0.625rem; }
       .tabs dd > a:hover {
-        background: #e1e1e1; }
+        background: #9b5000; }
     .tabs dd.active a {
-      background: white; }
+      background: #ff9b00; }
   .tabs.radius dd:first-child a {
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px; }
@@ -4135,6 +4141,8 @@ table {
     float: none;
     display: block;
     top: auto; }
+    .tabs.vertical dd > a {
+      margin-bottom: 0.625rem; }
 
 .tabs-content {
   *zoom: 1;
@@ -5689,7 +5697,7 @@ h1.fancytext {
   color: rgba(0, 0, 0, 0.85) !important; }
 
 h2.slogan-line {
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: 'Railway';
   font-size: 250%;
   color: #ff6400 !important; }
 
@@ -5705,3 +5713,18 @@ h2.slogan-line {
 .centered-image {
   display: block;
   margin: 0 auto; }
+
+.imageFade {
+  list-style-type: none; }
+  .imageFade li {
+    width: 100%;
+    height: auto;
+    min-height: 21.875rem;
+    max-height: 25rem; }
+    .imageFade li img {
+      width: inherit;
+      height: inherit; }
+
+#tabContainer {
+  min-height: 50rem;
+  max-height: 62.5rem; }
