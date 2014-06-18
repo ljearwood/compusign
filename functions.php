@@ -10,6 +10,7 @@ require_once "library/sidebars.php";
 require_once "library/theme-functions.php";
 require_once "library/ClearSettings.php";
 require_once "library/searchform-top-bar.php";
+require_once "library/ClearImageLoader.php";
 
 
 if( is_admin() ){

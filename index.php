@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php get_header();
+error_reporting(E_ALL);
+
+
+
+
+?>
 <div class="mainContainer">
     <?php
     $imagesDirectory = get_template_directory_uri() . '/img/';
@@ -134,105 +140,78 @@
                     </dl>
                     <div class="tabs-content vertical">
                         <div class="content active" id="panel1a">
-                            <h3 class="text-center white-text">Shingled Roofs</h3>
-                            <ul class="shingleSlider" data-orbit>
-                                <li><img src="<?php echo $imagesDirectory . 'slide1.jpg' ?>" alt=""/>
-
-                                    <div class="orbit-caption">Some caption</div>
-                                </li>
-                                <li><img src="<?php echo $imagesDirectory . 'slide2.jpg' ?>" alt=""/>
-
-                                    <div class="orbit-caption">Another Caption</div>
-                                </li>
-                                <li><img src="<?php echo $imagesDirectory . 'slide3.jpg' ?>" alt=""/>
-
-                                    <div class="orbit-caption">Caption 3</div>
-                                </li>
-                                <li><img src="<?php echo $imagesDirectory . 'slide4.jpg' ?>" alt=""/>
-
-                                    <div class="orbit-caption">Caption 4</div>
-                                </li>
-                            </ul>
+                            <h3 class="text-center white-text">Exterior Signs</h3>
+                            <?php
+                                $exteriorSigns = new ClearImageLoader();
+                                $exteriorSigns->SetupInnerFadeSlideShow( 'exterior' );
+                            ?>
                         </div>
                         <div class="content" id="panel2a">
                             <h3 class="text-center white-text">Interior Signs</h3>
-                            Select from a number of different options for your interior signage in order to brand your business and define your space.<br /><br />
-
-                            <b>3 Dimensional logo & lettering</b><br />
-                            Boldly display your company's insignia with dimensional lettering in order to provide the impact and visual creativity you're looking for.<br /><br />
-
-                            <b>Point of purchase (POP)</b><br />
-                            From menu boards to promotional material, consider point-of-sale material to prompt a purchase and attract clientele.<br /><br />
-
-                            <b>Informational</b><br />
-                            We can manufacture, from a variety of materials, for a number of different practical applications, directory signs, ADA signs, safety & caution signage as well as name plates.<br /><br />
-
-                            <b>Decorative</b><br />
-                            From a mural on wall paper to your logo on the dance floor, a talented design and production staff are on hand to help you, as simply or as elaborately, enhance and adorn your space.<br /><br />
-
-                            <b>Tradeshow signs</b><br />
-                            Take your graphics on the road effortlessly with our collapsible, foldable, portable signs. We offer table cloths, retractable and stationary banner stands, pop-up booths and so much more.
-
-                            <br /><br />
+                            <p>Select from a number of different options for your interior signage in order to brand your business and define your space.</p>
+                            <?php
+                            $interiorImageSigns = new ClearImageLoader();
+                            $interiorImageSigns->SetupInnerFadeSlideShow( 'interior' );
+                            ?>
+<!--                            <b>3 Dimensional logo & lettering</b><br />-->
+<!--                            Boldly display your company's insignia with dimensional lettering in order to provide the impact and visual creativity you're looking for.<br /><br />-->
+<!---->
+<!--                            <b>Point of purchase (POP)</b><br />-->
+<!--                            From menu boards to promotional material, consider point-of-sale material to prompt a purchase and attract clientele.<br /><br />-->
+<!---->
+<!--                            <b>Informational</b><br />-->
+<!--                            We can manufacture, from a variety of materials, for a number of different practical applications, directory signs, ADA signs, safety & caution signage as well as name plates.<br /><br />-->
+<!---->
+<!--                            <b>Decorative</b><br />-->
+<!--                            From a mural on wall paper to your logo on the dance floor, a talented design and production staff are on hand to help you, as simply or as elaborately, enhance and adorn your space.<br /><br />-->
+<!---->
+<!--                            <b>Tradeshow signs</b><br />-->
+<!--                            Take your graphics on the road effortlessly with our collapsible, foldable, portable signs. We offer table cloths, retractable and stationary banner stands, pop-up booths and so much more.-->
+<!---->
+<!--                            <br /><br />-->
                         </div>
                         <div class="content" id="panel3a">
-                            <h3 class="text-center white-text">Tile Roofs</h3>
-                            <ul id="fadeSlider" class="imageFade">
-                                <li>
-                                    <img src="<?php echo $imagesDirectory . 'tile-slide1.jpg' ?>" alt="tile slide two"/>
-                                    <!--                                    <div class="sliderCaption">A caption</div>-->
-                                </li>
-                                <li>
-                                    <img src="<?php echo $imagesDirectory . 'tile-slide2.jpg' ?>" alt="tile slide two"/>
-                                    <!--                                    <div class="sliderCaption">Another caption</div>-->
-                                </li>
-                                <li>
-                                    <img src="<?php echo $imagesDirectory . 'tile-slide3.jpg' ?>" alt="tile slide two"/>
-                                    <!--                                    <div class="sliderCaption">A third caption</div>-->
-                                </li>
-                                <li>
-                                    <img src="<?php echo $imagesDirectory . 'tile-slide4.jpg' ?>" alt="tile slide two"/>
-                                    <!--                                    <div class="sliderCaption">Ad the last caption</div>-->
-                                </li>
-                            </ul>
-                            <!--                            <img src="--><?php //echo $imagesDirectory . 'tile-slide2.jpg' ?><!--" alt="tile slide two"/>-->
-                            <div class="row">
-                                <div class="small-12 medium-12 large-12 columns">
-                                    <div class="panel">
-                                        <h3 class="text-right">Some headline and keyword</h3>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Atque deleniti doloremque eos ipsum non nulla qui tempore?
-                                            A ipsum laboriosam nemo repellat reprehenderit rerum
-                                            temporibus.</p>
-
-                                        <p>Aliquid animi, aut beatae consequatur cupiditate dicta
-                                            eveniet harum laborum modi nobis quae quos unde
-                                            voluptatibus? Ab aperiam, atque distinctio doloribus iste
-                                            quod repellat tenetur?</p>
-
-                                        <p>Beatae deserunt dignissimos incidunt reprehenderit. Eaque
-                                            earum, enim eum explicabo iste labore minus nam obcaecati
-                                            perferendis quae quas sunt temporibus tenetur ut
-                                            voluptatum! Dicta, sapiente?</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <h3 class="text-center white-text">Real Estate Signs</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo in ratione
+                                suscipit.</p>
+                            <?php
+                                $realEstateSigns = new ClearImageLoader();
+                                $realEstateSigns->SetupInnerFadeSlideShow( 'real-estate' );
+                            ?>
                         </div>
                         <div class="content" id="panel4a">
                             <h2>Traffic Signs</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo in ratione
+                                suscipit.</p>
+                            <?php
+                            $trafficSigns = new ClearImageLoader();
+                            $trafficSigns->SetupInnerFadeSlideShow( 'traffic' );
+                            ?>
                         </div>
                     </div>
                 </div>
                 <div class="content" id="panel2-2">
                     <div class="row">
                         <div class="small-12 medium-12 large-12 columns">
-                            <div class="panel">
-                                <h3>Siding Info</h3>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-                                    blanditiis cum cumque ducimus fugit inventore nam necessitatibus nobis
-                                    rerum sit! Doloremque minima praesentium ratione similique.</p>
+                            <div class="">
+                                <h3>Banners</h3>
+                                <?php
+                                    $bannerImageList = [];
+                                    $bannerDirectory = 'banners';
+                                    $banners = new ClearImageLoader();
+                                    if( $banners->setImageDirectory( $bannerDirectory ) ){
+                                        $startUlTag = '<ul style="list-style-type:none;" class="' . $banners->getImageDirectoryShortName() . '">';
+                                        $endUlTag = '</ul>';
+                                        $bannerImages = $banners->loadImages();
+                                        $bannerImageList = $banners->setUpImageList( $bannerImages );
+                                        $countBanners = count($bannerImageList);
+                                        echo $startUlTag;
+                                        for( $i = 0; $i < $countBanners; $i++ ){
+                                            echo strval($bannerImageList[$i]);
+                                        }
+                                        echo $endUlTag;
+                                    }
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -240,23 +219,18 @@
                 <div class="content" id="panel2-3">
                     <div class="row">
                         <div class="small-12 medium-12 large-12 columns">
-                            <div class="panel callout">
-                                <h3 class="text-right">Some headline and keyword</h3>
-
+                            <div class="">
+                                <h3 class="">Vehicle Graphics</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
                                     autem dignissimos dolores doloribus, eveniet facilis impedit,
                                     itaque magnam nihil qui quibusdam rem similique temporibus
                                     vel!</p>
-
-                                <p>A accusamus, amet id modi necessitatibus quia rem. Ab aperiam
-                                    debitis doloremque ex ipsum neque temporibus unde voluptatem
-                                    voluptatibus? Magni odit, similique? Mollitia, nostrum,
-                                    tenetur.</p>
-
-                                <p>A adipisci assumenda consectetur dolorum ducimus eius enim eos
-                                    exercitationem necessitatibus neque nobis odio quo, reprehenderit
-                                    tempora temporibus. Assumenda aut commodi error expedita placeat
-                                    tempore.</p>
+                                <div class="">
+                                    <?php
+                                        $vehicleSigns = new ClearImageLoader();
+                                        $vehicleSigns->SetupInnerFadeSlideShow( 'vehicle' );
+                                    ?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -270,19 +244,16 @@
                         <div class="content active" id="panel1a">
                             <div class="row">
                                 <div class="small-12 medium-12 large-12 columns">
-                                    <div class="panel callout">
-                                        <h3 class="text-left">Something written about this
-                                            subject</h3>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Quas, quia voluptate. Accusantium blanditiis cupiditate,
-                                            facere laboriosam mollitia optio quisquam rerum sed
-                                            tempora unde. Aspernatur, unde?</p>
-
+                                    <div class="">
+                                        <h3 class="text-left">Digital Imaging</h3>
                                         <p>Delectus ea illum mollitia odio officia porro provident
                                             quidem? Beatae consequatur cum cupiditate delectus dolor
                                             exercitationem ipsam placeat possimus sunt tempora,
                                             temporibus, vero. Dolore, perferendis.</p>
+                                        <?php
+                                            $digitalImagingSigns = new ClearImageLoader();
+                                            $digitalImagingSigns->SetupInnerFadeSlideShow( 'digital-imaging' );
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -290,7 +261,7 @@
                         <div class="content" id="panel2a">
                             <div class="row">
                                 <div class="small-12 medium-12 large-12 columns">
-                                    <div class="panel">
+                                    <div class="">
                                         <h3 class="text-center">Another such thing here with key
                                             words</h3>
 
@@ -325,3 +296,21 @@
     </div>
 
 <?php get_footer(); ?>
+<!--<ul class="shingleSlider" data-orbit>-->
+<!--    <li><img src="--><?php //echo $imagesDirectory . 'slide1.jpg' ?><!--" alt=""/>-->
+<!---->
+<!--        <div class="orbit-caption">Some caption</div>-->
+<!--    </li>-->
+<!--    <li><img src="--><?php //echo $imagesDirectory . 'slide2.jpg' ?><!--" alt=""/>-->
+<!---->
+<!--        <div class="orbit-caption">Another Caption</div>-->
+<!--    </li>-->
+<!--    <li><img src="--><?php //echo $imagesDirectory . 'slide3.jpg' ?><!--" alt=""/>-->
+<!---->
+<!--        <div class="orbit-caption">Caption 3</div>-->
+<!--    </li>-->
+<!--    <li><img src="--><?php //echo $imagesDirectory . 'slide4.jpg' ?><!--" alt=""/>-->
+<!---->
+<!--        <div class="orbit-caption">Caption 4</div>-->
+<!--    </li>-->
+<!--</ul>-->
